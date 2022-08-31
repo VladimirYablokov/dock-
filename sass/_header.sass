@@ -1,0 +1,94 @@
+header
+    height: 70px
+    // width: 100vw
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    align-content: center
+    align-items: center
+    flex-wrap: wrap
+    padding: 0 120px
+
+    .links-box
+        display: flex
+        width: 500px
+        justify-content: space-between
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+
+        .link
+            position: relative
+            display: flex
+            font-weight: 400
+            font-size: 16px
+            line-height: 20px
+            cursor: pointer
+
+            &::after
+                content: ''
+                position: absolute
+                left: 50%
+                bottom: 0
+                height: 1px
+                width: 0
+                background-color: black
+                transition: width 0.5s ease, left 0.5s ease
+
+            &:hover::after
+                width: 100%
+                left: 0
+                
+    .login-box
+        display: flex
+        width: 30vw
+        justify-content: flex-end
+        flex-direction: row
+        flex-wrap: wrap
+        align-content: center
+        align-items: center
+
+        .login
+            position: relative
+            display: flex
+            font-weight: 700
+            font-size: 16px
+            line-height: 20px
+            cursor: pointer
+
+            &::after
+                content: ''
+                position: absolute
+                left: 50%
+                bottom: 0
+                height: 1px
+                width: 0
+                background-color: black
+                transition: width 0.5s ease, left 0.5s ease
+
+            &:hover::after
+                width: 100%
+                left: 0
+
+        .start
+            margin: 0 30px
+            width: 130px
+            height: 40px
+            background: rgba(64, 140, 255, 0.1)
+            border: none
+            border-radius: 20px
+            color: #4058FF
+            font-weight: 700
+            font-size: 16px
+            line-height: 20px
+            cursor: pointer
+            transition: background 0.5s ease, color 0.5s ease
+
+            &:hover
+                background: #4058FF
+                color: white
+
+            
+
+

@@ -1,0 +1,98 @@
+header {
+  height: 70px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 120px;
+}
+header .links-box {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header .links-box .link {
+  position: relative;
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+}
+header .links-box .link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background-color: black;
+  transition: width 0.5s ease, left 0.5s ease;
+}
+header .links-box .link:hover::after {
+  width: 100%;
+  left: 0;
+}
+header .login-box {
+  display: flex;
+  width: 30vw;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+header .login-box .login {
+  position: relative;
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+}
+header .login-box .login::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background-color: black;
+  transition: width 0.5s ease, left 0.5s ease;
+}
+header .login-box .login:hover::after {
+  width: 100%;
+  left: 0;
+}
+header .login-box .start {
+  margin: 0 30px;
+  width: 130px;
+  height: 40px;
+  background: rgba(64, 140, 255, 0.1);
+  border: none;
+  border-radius: 20px;
+  color: #4058FF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+header .login-box .start:hover {
+  background: #4058FF;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
